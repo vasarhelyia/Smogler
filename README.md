@@ -28,7 +28,7 @@ From the [public API](https://aqicn.org/api/) of the [World Air Quality Index Pr
 
 ![Smogler Watch complication](https://cloud.githubusercontent.com/assets/1460573/23830864/ab7f986a-0714-11e7-9823-4edb5f64fa5d.PNG)
 
-## What's to be improved atm?
+## What's next?
 
 There's always room for improvement, Smogler is no exception. 
 
