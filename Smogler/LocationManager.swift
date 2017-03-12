@@ -19,7 +19,7 @@ class LocationManager {
 		#endif
 	}
 
-	var geoLoc: CLLocation? {
+	func geoLoc() -> CLLocation? {
 		if (CLLocationManager.authorizationStatus() == .authorizedAlways ||
 			CLLocationManager.authorizationStatus() == .authorizedWhenInUse) {
 			if let newLoc = self.locManager.location {

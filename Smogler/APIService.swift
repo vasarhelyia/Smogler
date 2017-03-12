@@ -30,7 +30,7 @@ class APIService: NSObject, URLSessionDataDelegate {
 	// Compose request
 	
 	private var geoLocURLRequest: URLRequest? {
-		let location = self.locationManager.geoLoc
+		let location = self.locationManager.geoLoc()
 		let latitude = location?.coordinate.latitude
 		let longitude = location?.coordinate.longitude
 		
