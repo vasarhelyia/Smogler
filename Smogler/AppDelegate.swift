@@ -20,9 +20,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 		session?.delegate = self
 		session?.activate()
 		
-		UIApplication.shared.setMinimumBackgroundFetchInterval(60 * 60)
+		UIApplication.shared.setMinimumBackgroundFetchInterval(60 * 30)
 
 		return true
+	}
+
+	func applicationDidBecomeActive(_ application: UIApplication) {
+		APIService.sharedInstance.fetchAQI()
 	}
 
 	func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
