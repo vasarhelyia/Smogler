@@ -27,7 +27,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
 	func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
 		APIService.sharedInstance.fetchAQI()
-		completionHandler(.newData)
+		// TODO: completionHandler(.newData)?
 	}
 
 	// WCSessionDelegate
