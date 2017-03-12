@@ -26,7 +26,7 @@ class LocationManager {
 				self.location = newLoc
 				return newLoc
 			} else {
-				print("Could not get location update, assuming previous lcoation is still close by the same air quality station.")
+				print("Could not get location update, assuming previous location is still close by the same air quality station.")
 				return self.location
 			}
 		}
