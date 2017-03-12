@@ -1,0 +1,744 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A0CB6FE1E598DBA003390A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB6FD1E598DBA003390A2 /* AppDelegate.swift */; };
+		8A0CB7001E598DBA003390A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB6FF1E598DBA003390A2 /* ViewController.swift */; };
+		8A0CB7031E598DBA003390A2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB7011E598DBA003390A2 /* Main.storyboard */; };
+		8A0CB7051E598DBA003390A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB7041E598DBA003390A2 /* Assets.xcassets */; };
+		8A0CB7081E598DBA003390A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB7061E598DBA003390A2 /* LaunchScreen.storyboard */; };
+		8A0CB7131E598DBA003390A2 /* SmoglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB7121E598DBA003390A2 /* SmoglerTests.swift */; };
+		8A0CB7181E598DBA003390A2 /* Smogler WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8A0CB7171E598DBA003390A2 /* Smogler WatchKit App.app */; };
+		8A0CB71E1E598DBA003390A2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB71C1E598DBA003390A2 /* Interface.storyboard */; };
+		8A0CB7201E598DBA003390A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB71F1E598DBA003390A2 /* Assets.xcassets */; };
+		8A0CB7271E598DBA003390A2 /* Smogler WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 8A0CB7261E598DBA003390A2 /* Smogler WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8A0CB72E1E598DBA003390A2 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB72D1E598DBA003390A2 /* InterfaceController.swift */; };
+		8A0CB7301E598DBA003390A2 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB72F1E598DBA003390A2 /* ExtensionDelegate.swift */; };
+		8A0CB7321E598DBA003390A2 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB7311E598DBA003390A2 /* NotificationController.swift */; };
+		8A0CB7341E598DBA003390A2 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB7331E598DBA003390A2 /* ComplicationController.swift */; };
+		8A0CB7361E598DBA003390A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB7351E598DBA003390A2 /* Assets.xcassets */; };
+		8A0CB74B1E5992C0003390A2 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB74A1E5992C0003390A2 /* APIService.swift */; };
+		8A809DE31E6C637100ED0641 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A809DE21E6C637100ED0641 /* LocationManager.swift */; };
+		8A809DE41E6C653200ED0641 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A809DE21E6C637100ED0641 /* LocationManager.swift */; };
+		8ABD77651E5A214F00656FDE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB74A1E5992C0003390A2 /* APIService.swift */; };
+		8ADCE1581E5B7C4C00BF28AF /* AQILevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */; };
+		8ADCE1591E5B7C4C00BF28AF /* AQILevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8A0CB70F1E598DBA003390A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A0CB6F21E598DBA003390A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A0CB6F91E598DBA003390A2;
+			remoteInfo = Smogler;
+		};
+		8A0CB7191E598DBA003390A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A0CB6F21E598DBA003390A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A0CB7161E598DBA003390A2;
+			remoteInfo = "Smogler WatchKit App";
+		};
+		8A0CB7281E598DBA003390A2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8A0CB6F21E598DBA003390A2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A0CB7251E598DBA003390A2;
+			remoteInfo = "Smogler WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8A0CB73D1E598DBA003390A2 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8A0CB7271E598DBA003390A2 /* Smogler WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0CB7411E598DBA003390A2 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				8A0CB7181E598DBA003390A2 /* Smogler WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8A0CB6FA1E598DBA003390A2 /* Smogler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Smogler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0CB6FD1E598DBA003390A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A0CB6FF1E598DBA003390A2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8A0CB7021E598DBA003390A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8A0CB7041E598DBA003390A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A0CB7071E598DBA003390A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8A0CB7091E598DBA003390A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0CB70E1E598DBA003390A2 /* SmoglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0CB7121E598DBA003390A2 /* SmoglerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoglerTests.swift; sourceTree = "<group>"; };
+		8A0CB7141E598DBA003390A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0CB7171E598DBA003390A2 /* Smogler WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smogler WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0CB71D1E598DBA003390A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		8A0CB71F1E598DBA003390A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A0CB7211E598DBA003390A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0CB7261E598DBA003390A2 /* Smogler WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Smogler WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A0CB72C1E598DBA003390A2 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		8A0CB72D1E598DBA003390A2 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		8A0CB72F1E598DBA003390A2 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		8A0CB7311E598DBA003390A2 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		8A0CB7331E598DBA003390A2 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		8A0CB7351E598DBA003390A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8A0CB7371E598DBA003390A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A0CB74A1E5992C0003390A2 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		8A809DE21E6C637100ED0641 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQILevel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8A0CB6F71E598DBA003390A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0CB70B1E598DBA003390A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0CB7231E598DBA003390A2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A0CB6F11E598DBA003390A2 = {
+			isa = PBXGroup;
+			children = (
+				8A0CB6FC1E598DBA003390A2 /* Smogler */,
+				8A0CB7111E598DBA003390A2 /* SmoglerTests */,
+				8A0CB71B1E598DBA003390A2 /* Smogler WatchKit App */,
+				8A0CB72A1E598DBA003390A2 /* Smogler WatchKit Extension */,
+				8A0CB6FB1E598DBA003390A2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8A0CB6FB1E598DBA003390A2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8A0CB6FA1E598DBA003390A2 /* Smogler.app */,
+				8A0CB70E1E598DBA003390A2 /* SmoglerTests.xctest */,
+				8A0CB7171E598DBA003390A2 /* Smogler WatchKit App.app */,
+				8A0CB7261E598DBA003390A2 /* Smogler WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8A0CB6FC1E598DBA003390A2 /* Smogler */ = {
+			isa = PBXGroup;
+			children = (
+				8A0CB6FD1E598DBA003390A2 /* AppDelegate.swift */,
+				8A0CB6FF1E598DBA003390A2 /* ViewController.swift */,
+				8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */,
+				8A0CB74A1E5992C0003390A2 /* APIService.swift */,
+				8A809DE21E6C637100ED0641 /* LocationManager.swift */,
+				8A0CB7011E598DBA003390A2 /* Main.storyboard */,
+				8A0CB7041E598DBA003390A2 /* Assets.xcassets */,
+				8A0CB7061E598DBA003390A2 /* LaunchScreen.storyboard */,
+				8A0CB7091E598DBA003390A2 /* Info.plist */,
+			);
+			path = Smogler;
+			sourceTree = "<group>";
+		};
+		8A0CB7111E598DBA003390A2 /* SmoglerTests */ = {
+			isa = PBXGroup;
+			children = (
+				8A0CB7121E598DBA003390A2 /* SmoglerTests.swift */,
+				8A0CB7141E598DBA003390A2 /* Info.plist */,
+			);
+			path = SmoglerTests;
+			sourceTree = "<group>";
+		};
+		8A0CB71B1E598DBA003390A2 /* Smogler WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				8A0CB71C1E598DBA003390A2 /* Interface.storyboard */,
+				8A0CB71F1E598DBA003390A2 /* Assets.xcassets */,
+				8A0CB7211E598DBA003390A2 /* Info.plist */,
+			);
+			path = "Smogler WatchKit App";
+			sourceTree = "<group>";
+		};
+		8A0CB72A1E598DBA003390A2 /* Smogler WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				8A0CB72D1E598DBA003390A2 /* InterfaceController.swift */,
+				8A0CB72F1E598DBA003390A2 /* ExtensionDelegate.swift */,
+				8A0CB7311E598DBA003390A2 /* NotificationController.swift */,
+				8A0CB7331E598DBA003390A2 /* ComplicationController.swift */,
+				8A0CB7351E598DBA003390A2 /* Assets.xcassets */,
+				8A0CB7371E598DBA003390A2 /* Info.plist */,
+				8A0CB72B1E598DBA003390A2 /* Supporting Files */,
+			);
+			path = "Smogler WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		8A0CB72B1E598DBA003390A2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8A0CB72C1E598DBA003390A2 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8A0CB6F91E598DBA003390A2 /* Smogler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0CB7421E598DBA003390A2 /* Build configuration list for PBXNativeTarget "Smogler" */;
+			buildPhases = (
+				8A0CB6F61E598DBA003390A2 /* Sources */,
+				8A0CB6F71E598DBA003390A2 /* Frameworks */,
+				8A0CB6F81E598DBA003390A2 /* Resources */,
+				8A0CB7411E598DBA003390A2 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0CB71A1E598DBA003390A2 /* PBXTargetDependency */,
+			);
+			name = Smogler;
+			productName = Smogler;
+			productReference = 8A0CB6FA1E598DBA003390A2 /* Smogler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8A0CB70D1E598DBA003390A2 /* SmoglerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0CB7451E598DBA003390A2 /* Build configuration list for PBXNativeTarget "SmoglerTests" */;
+			buildPhases = (
+				8A0CB70A1E598DBA003390A2 /* Sources */,
+				8A0CB70B1E598DBA003390A2 /* Frameworks */,
+				8A0CB70C1E598DBA003390A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0CB7101E598DBA003390A2 /* PBXTargetDependency */,
+			);
+			name = SmoglerTests;
+			productName = SmoglerTests;
+			productReference = 8A0CB70E1E598DBA003390A2 /* SmoglerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A0CB7161E598DBA003390A2 /* Smogler WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0CB73E1E598DBA003390A2 /* Build configuration list for PBXNativeTarget "Smogler WatchKit App" */;
+			buildPhases = (
+				8A0CB7151E598DBA003390A2 /* Resources */,
+				8A0CB73D1E598DBA003390A2 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8A0CB7291E598DBA003390A2 /* PBXTargetDependency */,
+			);
+			name = "Smogler WatchKit App";
+			productName = "Smogler WatchKit App";
+			productReference = 8A0CB7171E598DBA003390A2 /* Smogler WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		8A0CB7251E598DBA003390A2 /* Smogler WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0CB73A1E598DBA003390A2 /* Build configuration list for PBXNativeTarget "Smogler WatchKit Extension" */;
+			buildPhases = (
+				8A0CB7221E598DBA003390A2 /* Sources */,
+				8A0CB7231E598DBA003390A2 /* Frameworks */,
+				8A0CB7241E598DBA003390A2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Smogler WatchKit Extension";
+			productName = "Smogler WatchKit Extension";
+			productReference = 8A0CB7261E598DBA003390A2 /* Smogler WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8A0CB6F21E598DBA003390A2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = vasarhelyia;
+				TargetAttributes = {
+					8A0CB6F91E598DBA003390A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5F4B546N3Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					8A0CB70D1E598DBA003390A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 8A0CB6F91E598DBA003390A2;
+					};
+					8A0CB7161E598DBA003390A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5F4B546N3Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.app = {
+								enabled = 1;
+							};
+						};
+					};
+					8A0CB7251E598DBA003390A2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 5F4B546N3Q;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes.watchos.extension = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 8A0CB6F51E598DBA003390A2 /* Build configuration list for PBXProject "Smogler" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8A0CB6F11E598DBA003390A2;
+			productRefGroup = 8A0CB6FB1E598DBA003390A2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A0CB6F91E598DBA003390A2 /* Smogler */,
+				8A0CB70D1E598DBA003390A2 /* SmoglerTests */,
+				8A0CB7161E598DBA003390A2 /* Smogler WatchKit App */,
+				8A0CB7251E598DBA003390A2 /* Smogler WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8A0CB6F81E598DBA003390A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0CB7081E598DBA003390A2 /* LaunchScreen.storyboard in Resources */,
+				8A0CB7051E598DBA003390A2 /* Assets.xcassets in Resources */,
+				8A0CB7031E598DBA003390A2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0CB70C1E598DBA003390A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0CB7151E598DBA003390A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0CB7201E598DBA003390A2 /* Assets.xcassets in Resources */,
+				8A0CB71E1E598DBA003390A2 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0CB7241E598DBA003390A2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0CB7361E598DBA003390A2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8A0CB6F61E598DBA003390A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0CB7001E598DBA003390A2 /* ViewController.swift in Sources */,
+				8ADCE1581E5B7C4C00BF28AF /* AQILevel.swift in Sources */,
+				8A809DE31E6C637100ED0641 /* LocationManager.swift in Sources */,
+				8A0CB74B1E5992C0003390A2 /* APIService.swift in Sources */,
+				8A0CB6FE1E598DBA003390A2 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0CB70A1E598DBA003390A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0CB7131E598DBA003390A2 /* SmoglerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A0CB7221E598DBA003390A2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A0CB7321E598DBA003390A2 /* NotificationController.swift in Sources */,
+				8A0CB7341E598DBA003390A2 /* ComplicationController.swift in Sources */,
+				8A0CB7301E598DBA003390A2 /* ExtensionDelegate.swift in Sources */,
+				8A809DE41E6C653200ED0641 /* LocationManager.swift in Sources */,
+				8A0CB72E1E598DBA003390A2 /* InterfaceController.swift in Sources */,
+				8ABD77651E5A214F00656FDE /* APIService.swift in Sources */,
+				8ADCE1591E5B7C4C00BF28AF /* AQILevel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8A0CB7101E598DBA003390A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A0CB6F91E598DBA003390A2 /* Smogler */;
+			targetProxy = 8A0CB70F1E598DBA003390A2 /* PBXContainerItemProxy */;
+		};
+		8A0CB71A1E598DBA003390A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A0CB7161E598DBA003390A2 /* Smogler WatchKit App */;
+			targetProxy = 8A0CB7191E598DBA003390A2 /* PBXContainerItemProxy */;
+		};
+		8A0CB7291E598DBA003390A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8A0CB7251E598DBA003390A2 /* Smogler WatchKit Extension */;
+			targetProxy = 8A0CB7281E598DBA003390A2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8A0CB7011E598DBA003390A2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0CB7021E598DBA003390A2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8A0CB7061E598DBA003390A2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0CB7071E598DBA003390A2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		8A0CB71C1E598DBA003390A2 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8A0CB71D1E598DBA003390A2 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8A0CB7381E598DBA003390A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8A0CB7391E598DBA003390A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8A0CB73B1E598DBA003390A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 5F4B546N3Q;
+				INFOPLIST_FILE = "Smogler WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		8A0CB73C1E598DBA003390A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 5F4B546N3Q;
+				INFOPLIST_FILE = "Smogler WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		8A0CB73F1E598DBA003390A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5F4B546N3Q;
+				IBSC_MODULE = Smogler_WatchKit_Extension;
+				INFOPLIST_FILE = "Smogler WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		8A0CB7401E598DBA003390A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5F4B546N3Q;
+				IBSC_MODULE = Smogler_WatchKit_Extension;
+				INFOPLIST_FILE = "Smogler WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		8A0CB7431E598DBA003390A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5F4B546N3Q;
+				INFOPLIST_FILE = Smogler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		8A0CB7441E598DBA003390A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5F4B546N3Q;
+				INFOPLIST_FILE = Smogler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		8A0CB7461E598DBA003390A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmoglerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.SmoglerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smogler.app/Smogler";
+			};
+			name = Debug;
+		};
+		8A0CB7471E598DBA003390A2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = SmoglerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.SmoglerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smogler.app/Smogler";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8A0CB6F51E598DBA003390A2 /* Build configuration list for PBXProject "Smogler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0CB7381E598DBA003390A2 /* Debug */,
+				8A0CB7391E598DBA003390A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0CB73A1E598DBA003390A2 /* Build configuration list for PBXNativeTarget "Smogler WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0CB73B1E598DBA003390A2 /* Debug */,
+				8A0CB73C1E598DBA003390A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0CB73E1E598DBA003390A2 /* Build configuration list for PBXNativeTarget "Smogler WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0CB73F1E598DBA003390A2 /* Debug */,
+				8A0CB7401E598DBA003390A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0CB7421E598DBA003390A2 /* Build configuration list for PBXNativeTarget "Smogler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0CB7431E598DBA003390A2 /* Debug */,
+				8A0CB7441E598DBA003390A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0CB7451E598DBA003390A2 /* Build configuration list for PBXNativeTarget "SmoglerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A0CB7461E598DBA003390A2 /* Debug */,
+				8A0CB7471E598DBA003390A2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8A0CB6F21E598DBA003390A2 /* Project object */;
+}

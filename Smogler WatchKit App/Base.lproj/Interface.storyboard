@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Smogler_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label width="1" height="55" alignment="center" text="Gathering local air quality information..." textAlignment="center" numberOfLines="3" id="cDO-aZ-IKJ">
+                            <fontDescription key="font" type="system" weight="light" pointSize="15"/>
+                        </label>
+                        <label width="1" height="50" alignment="left" textAlignment="center" id="c1G-DJ-pfS">
+                            <fontDescription key="font" type="boldSystem" pointSize="51"/>
+                        </label>
+                        <label width="1" height="37" alignment="center" textAlignment="center" numberOfLines="2" id="KbF-o9-srg">
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="cityLabel" destination="cDO-aZ-IKJ" id="BGV-5r-euK"/>
+                        <outlet property="textLabel" destination="KbF-o9-srg" id="1tK-4g-5tp"/>
+                        <outlet property="valueLabel" destination="c1G-DJ-pfS" id="n8V-vd-A9R"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219" y="310"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="Smogler_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
