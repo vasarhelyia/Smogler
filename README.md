@@ -32,10 +32,10 @@ From the [public API](https://aqicn.org/api/) of the [World Air Quality Index Pr
 
 There's always room for improvement, Smogler is no exception. 
 
-1. Make sure things fetch the API only when necessary and try to move all the load possible to the iOS app. That was the initial goal, but there are so many scenarios (iOS app active, background, etc., Watch app active, background, ...), I might have gotten a bit lost sorting these out.
+[1.](https://github.com/vasarhelyia/Smogler/issues/4) Make sure things fetch the API only when necessary and try to move all the load possible to the iOS app. That was the initial goal, but there are so many scenarios (iOS app active, background, etc., Watch app active, background, ...), I might have gotten a bit lost sorting these out.
 
-2. Writing tests for the Watch extension is not trivial, but it would be nice to see how it's possible.
+[2.](https://github.com/vasarhelyia/Smogler/issues/5) Writing tests for the Watch extension is not trivial, but it would be nice to see how it's possible.
 
-3. Push notifications - to be alerted in case the air quality dropped, for example.
+[3.](https://github.com/vasarhelyia/Smogler/issues/1) Push notifications - to be alerted in case the air quality dropped, for example.
 
-4. More supported complication families?
+[4.](https://github.com/vasarhelyia/Smogler/issues/6) More supported complication families?
