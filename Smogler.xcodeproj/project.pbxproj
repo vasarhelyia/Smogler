@@ -12,7 +12,6 @@
 		8A0CB7001E598DBA003390A2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB6FF1E598DBA003390A2 /* ViewController.swift */; };
 		8A0CB7051E598DBA003390A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB7041E598DBA003390A2 /* Assets.xcassets */; };
 		8A0CB7081E598DBA003390A2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB7061E598DBA003390A2 /* LaunchScreen.storyboard */; };
-		8A0CB7131E598DBA003390A2 /* SmoglerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB7121E598DBA003390A2 /* SmoglerTests.swift */; };
 		8A0CB7181E598DBA003390A2 /* Smogler WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 8A0CB7171E598DBA003390A2 /* Smogler WatchKit App.app */; };
 		8A0CB71E1E598DBA003390A2 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB71C1E598DBA003390A2 /* Interface.storyboard */; };
 		8A0CB7201E598DBA003390A2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A0CB71F1E598DBA003390A2 /* Assets.xcassets */; };
@@ -31,13 +30,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		8A0CB70F1E598DBA003390A2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8A0CB6F21E598DBA003390A2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8A0CB6F91E598DBA003390A2;
-			remoteInfo = Smogler;
-		};
 		8A0CB7191E598DBA003390A2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8A0CB6F21E598DBA003390A2 /* Project object */;
@@ -87,9 +79,6 @@
 		8A0CB7041E598DBA003390A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A0CB7071E598DBA003390A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A0CB7091E598DBA003390A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A0CB70E1E598DBA003390A2 /* SmoglerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmoglerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A0CB7121E598DBA003390A2 /* SmoglerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmoglerTests.swift; sourceTree = "<group>"; };
-		8A0CB7141E598DBA003390A2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8A0CB7171E598DBA003390A2 /* Smogler WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smogler WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A0CB71D1E598DBA003390A2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
 		8A0CB71F1E598DBA003390A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,13 +104,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A0CB70B1E598DBA003390A2 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8A0CB7231E598DBA003390A2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -136,7 +118,6 @@
 			isa = PBXGroup;
 			children = (
 				8A0CB6FC1E598DBA003390A2 /* Smogler */,
-				8A0CB7111E598DBA003390A2 /* SmoglerTests */,
 				8A0CB71B1E598DBA003390A2 /* Smogler WatchKit App */,
 				8A0CB72A1E598DBA003390A2 /* Smogler WatchKit Extension */,
 				8A0CB6FB1E598DBA003390A2 /* Products */,
@@ -147,7 +128,6 @@
 			isa = PBXGroup;
 			children = (
 				8A0CB6FA1E598DBA003390A2 /* Smogler.app */,
-				8A0CB70E1E598DBA003390A2 /* SmoglerTests.xctest */,
 				8A0CB7171E598DBA003390A2 /* Smogler WatchKit App.app */,
 				8A0CB7261E598DBA003390A2 /* Smogler WatchKit Extension.appex */,
 			);
@@ -168,15 +148,6 @@
 				8A0CB7091E598DBA003390A2 /* Info.plist */,
 			);
 			path = Smogler;
-			sourceTree = "<group>";
-		};
-		8A0CB7111E598DBA003390A2 /* SmoglerTests */ = {
-			isa = PBXGroup;
-			children = (
-				8A0CB7121E598DBA003390A2 /* SmoglerTests.swift */,
-				8A0CB7141E598DBA003390A2 /* Info.plist */,
-			);
-			path = SmoglerTests;
 			sourceTree = "<group>";
 		};
 		8A0CB71B1E598DBA003390A2 /* Smogler WatchKit App */ = {
@@ -233,24 +204,6 @@
 			productReference = 8A0CB6FA1E598DBA003390A2 /* Smogler.app */;
 			productType = "com.apple.product-type.application";
 		};
-		8A0CB70D1E598DBA003390A2 /* SmoglerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8A0CB7451E598DBA003390A2 /* Build configuration list for PBXNativeTarget "SmoglerTests" */;
-			buildPhases = (
-				8A0CB70A1E598DBA003390A2 /* Sources */,
-				8A0CB70B1E598DBA003390A2 /* Frameworks */,
-				8A0CB70C1E598DBA003390A2 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8A0CB7101E598DBA003390A2 /* PBXTargetDependency */,
-			);
-			name = SmoglerTests;
-			productName = SmoglerTests;
-			productReference = 8A0CB70E1E598DBA003390A2 /* SmoglerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		8A0CB7161E598DBA003390A2 /* Smogler WatchKit App */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8A0CB73E1E598DBA003390A2 /* Build configuration list for PBXNativeTarget "Smogler WatchKit App" */;
@@ -305,12 +258,6 @@
 							};
 						};
 					};
-					8A0CB70D1E598DBA003390A2 = {
-						CreatedOnToolsVersion = 8.2.1;
-						LastSwiftMigration = 0930;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 8A0CB6F91E598DBA003390A2;
-					};
 					8A0CB7161E598DBA003390A2 = {
 						CreatedOnToolsVersion = 8.2.1;
 						LastSwiftMigration = 0930;
@@ -347,7 +294,6 @@
 			projectRoot = "";
 			targets = (
 				8A0CB6F91E598DBA003390A2 /* Smogler */,
-				8A0CB70D1E598DBA003390A2 /* SmoglerTests */,
 				8A0CB7161E598DBA003390A2 /* Smogler WatchKit App */,
 				8A0CB7251E598DBA003390A2 /* Smogler WatchKit Extension */,
 			);
@@ -362,13 +308,6 @@
 				021B091C20B1DCDE001D59C1 /* Main.storyboard in Resources */,
 				8A0CB7081E598DBA003390A2 /* LaunchScreen.storyboard in Resources */,
 				8A0CB7051E598DBA003390A2 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8A0CB70C1E598DBA003390A2 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,14 +343,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8A0CB70A1E598DBA003390A2 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8A0CB7131E598DBA003390A2 /* SmoglerTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8A0CB7221E598DBA003390A2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -429,11 +360,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A0CB7101E598DBA003390A2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8A0CB6F91E598DBA003390A2 /* Smogler */;
-			targetProxy = 8A0CB70F1E598DBA003390A2 /* PBXContainerItemProxy */;
-		};
 		8A0CB71A1E598DBA003390A2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8A0CB7161E598DBA003390A2 /* Smogler WatchKit App */;
@@ -673,34 +599,6 @@
 			};
 			name = Release;
 		};
-		8A0CB7461E598DBA003390A2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SmoglerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.SmoglerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smogler.app/Smogler";
-			};
-			name = Debug;
-		};
-		8A0CB7471E598DBA003390A2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = SmoglerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.SmoglerTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Smogler.app/Smogler";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -736,15 +634,6 @@
 			buildConfigurations = (
 				8A0CB7431E598DBA003390A2 /* Debug */,
 				8A0CB7441E598DBA003390A2 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8A0CB7451E598DBA003390A2 /* Build configuration list for PBXNativeTarget "SmoglerTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8A0CB7461E598DBA003390A2 /* Debug */,
-				8A0CB7471E598DBA003390A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

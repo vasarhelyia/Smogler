@@ -23,7 +23,7 @@
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>Smogler is using your location to determine air quality index based on where you are.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>The app provides location based air quality information</string>
+	<string>Smogler is using your location to determine air quality index based on where you are.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Smogler is using your location to determine air quality index based on where you are.</string>
 	<key>UIBackgroundModes</key>
