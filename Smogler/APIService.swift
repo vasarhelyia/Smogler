@@ -103,10 +103,8 @@ class APIService: NSObject, URLSessionDataDelegate {
 	}
 	
 	func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
-		if error == nil {
-			return
-		}
-		print("URL session completed with error: \(error?.localizedDescription)")
+    if let e = error {
+      print("URL session completed with error: \(e.localizedDescription)")
+    }
 	}
-	
 }

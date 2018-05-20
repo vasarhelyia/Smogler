@@ -22,19 +22,19 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
 					scheduleBackgroundTask()
 				}
 			}
-			task.setTaskCompleted()
+			task.setTaskCompletedWithSnapshot(false)
 		}
 	}
 
 	func scheduleBackgroundTask() {
 		let fireDate = Date(timeIntervalSinceNow: 60 * 30)
 		WKExtension.shared().scheduleBackgroundRefresh(withPreferredDate: fireDate, userInfo: nil) { (error) in
-			if (error == nil) {
-				print("successfully scheduled background task")
-			} else {
-				print("error scheduling background task: \(error?.localizedDescription)")
-			}
-		}
+      
+      if let e = error {
+        print("error scheduling background task: \(e.localizedDescription)")
+      } else {
+        print("successfully scheduled background task")
+      }
     }
-
+  }
 }

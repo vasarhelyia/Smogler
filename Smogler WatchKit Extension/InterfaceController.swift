@@ -29,7 +29,7 @@ class AQILevelComplicationInfo {
 
 class InterfaceController: WKInterfaceController, WCSessionDelegate, AQIDelegate {
 
-	let session: WCSession? = WCSession.isSupported() ? WCSession.default() : nil
+	let session: WCSession? = WCSession.isSupported() ? WCSession.default : nil
 
 	@IBOutlet weak var cityLabel: WKInterfaceLabel!
 	@IBOutlet weak var valueLabel: WKInterfaceLabel!

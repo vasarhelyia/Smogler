@@ -13,7 +13,7 @@ import WatchConnectivity
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
 	var window: UIWindow?
-	private let session: WCSession? = WCSession.isSupported() ? WCSession.default() : nil
+	private let session: WCSession? = WCSession.isSupported() ? WCSession.default : nil
 
 	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 		
