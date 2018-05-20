@@ -74,7 +74,7 @@ class APIService: NSObject, URLSessionDataDelegate {
 			let aqi = data["aqi"] as? Int,
 			let cityDict = data["city"] as? [String: Any],
 			let city = cityDict["name"] as? String else {
-				print("Error parsing JSON.")
+        print("Error parsing JSON. Make sure you are using a valid API token. You can acquire it here: https://aqicn.org/data-platform/token/")
 				return nil
 		}
 
