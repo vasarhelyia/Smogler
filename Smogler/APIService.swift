@@ -12,23 +12,23 @@ let token = "YOUR_TOKEN"
 let baseURLString = "https://api.waqi.info/feed"
 
 protocol AQIDelegate: class {
-	func didUpdateAQILevel(aqiInfo: AQIInfo)
-	func didFailWithError(err: String)
+  func didUpdateAQILevel(aqiInfo: AQIInfo)
+  func didFailWithError(err: String)
 }
 
 class APIService: NSObject, URLSessionDataDelegate {
   static var sharedInstance = APIService()
-	private var locationManager = LocationManager()
+  private var locationManager = LocationManager()
 
-	#if os(watchOS)
-		weak var watchDelegate: AQIDelegate?
-	#else
-		weak var delegate: AQIDelegate?
-	#endif
-	
-	// Compose request
-	
-	private var geoLocURLRequest: URLRequest? {
+  #if os(watchOS)
+    weak var watchDelegate: AQIDelegate?
+  #else
+    weak var delegate: AQIDelegate?
+  #endif
+
+  // Compose request
+
+  private var geoLocURLRequest: URLRequest? {
     let location = self.locationManager.geoLoc()
     let latitude = location?.coordinate.latitude
     let longitude = location?.coordinate.longitude
