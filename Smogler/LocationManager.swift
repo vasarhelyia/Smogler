@@ -9,28 +9,28 @@
 import CoreLocation
 
 class LocationManager {
-	private let locManager = CLLocationManager()
-	private var location: CLLocation?
-	
-	init() {
-		self.locManager.requestAlwaysAuthorization()
-		#if os(iOS)
-			self.locManager.allowsBackgroundLocationUpdates = true
-		#endif
-	}
+  private let locManager = CLLocationManager()
+  private var location: CLLocation?
 
-	func geoLoc() -> CLLocation? {
-		if (CLLocationManager.authorizationStatus() == .authorizedAlways ||
-			CLLocationManager.authorizationStatus() == .authorizedWhenInUse) {
-			if let newLoc = self.locManager.location {
-				self.location = newLoc
-				return newLoc
-			} else {
-				print("Could not get location update, assuming previous location is still close by the same air quality station.")
-				return self.location
-			}
-		}
-		print("Not authorized to get location update.")
-		return nil
-	}
+  init() {
+    self.locManager.requestAlwaysAuthorization()
+    #if os(iOS)
+      self.locManager.allowsBackgroundLocationUpdates = true
+    #endif
+  }
+
+  func geoLoc() -> CLLocation? {
+    if (CLLocationManager.authorizationStatus() == .authorizedAlways ||
+      CLLocationManager.authorizationStatus() == .authorizedWhenInUse) {
+      if let newLoc = self.locManager.location {
+        self.location = newLoc
+        return newLoc
+      } else {
+        print("Could not get location update, assuming previous location is still close by the same air quality station.")
+        return self.location
+      }
+    }
+    print("Not authorized to get location update.")
+    return nil
+  }
 }
