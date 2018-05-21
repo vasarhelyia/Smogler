@@ -12,49 +12,49 @@ import WatchConnectivity
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
 
-	var window: UIWindow?
-	private let session: WCSession? = WCSession.isSupported() ? WCSession.default : nil
+  var window: UIWindow?
+  private let session: WCSession? = WCSession.isSupported() ? WCSession.default : nil
 
-	func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-		
-		session?.delegate = self
-		session?.activate()
-		
-		UIApplication.shared.setMinimumBackgroundFetchInterval(60 * 30)
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
-		return true
-	}
+  session?.delegate = self
+  session?.activate()
 
-	func applicationDidBecomeActive(_ application: UIApplication) {
-		APIService.sharedInstance.fetchAQI()
-	}
+  UIApplication.shared.setMinimumBackgroundFetchInterval(60 * 30)
 
-	func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-		APIService.sharedInstance.fetchAQI()
-		// TODO: completionHandler(.newData)?
-	}
+  return true
+  }
 
-	// WCSessionDelegate
-	
-	func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) { }
+  func applicationDidBecomeActive(_ application: UIApplication) {
+    APIService.sharedInstance.fetchAQI()
+  }
 
-	func sessionDidBecomeInactive(_ session: WCSession) { }
+  func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+    APIService.sharedInstance.fetchAQI()
+    // TODO: completionHandler(.newData)?
+  }
 
-	func sessionDidDeactivate(_ session: WCSession) {
-		session.activate()
-	}
+  // WCSessionDelegate
 
-	func sendAQI(aqi: AQIInfo) {
-		if !((session?.isPaired)! && (session?.isWatchAppInstalled)! && (session?.isReachable)!) {
-			return
-		}
+  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) { }
 
-		session?.sendMessage(["aqi": aqi.aqiLevel.value, "city": aqi.city], replyHandler: { dict in
-			print("dict sent to Watch: \(dict)")
-		}, errorHandler: { err in
-			print("error sending message to Watch: \(err.localizedDescription)")
-		})
-	}
-	
+  func sessionDidBecomeInactive(_ session: WCSession) { }
+
+  func sessionDidDeactivate(_ session: WCSession) {
+    session.activate()
+  }
+
+  func sendAQI(aqi: AQIInfo) {
+    if !((session?.isPaired)! && (session?.isWatchAppInstalled)! && (session?.isReachable)!) {
+      return
+    }
+
+    session?.sendMessage(["aqi": aqi.aqiLevel.value, "city": aqi.city], replyHandler: { dict in
+      print("dict sent to Watch: \(dict)")
+    }, errorHandler: { err in
+      print("error sending message to Watch: \(err.localizedDescription)")
+    })
+  }
+
 }
 
