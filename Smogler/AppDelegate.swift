@@ -13,14 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         session?.delegate = self
         session?.activate()
 
-        UIApplication.shared.setMinimumBackgroundFetchInterval(60 * 30)
-
+        UIApplication.shared.setMinimumBackgroundFetchInterval(Constants.minBackgroundFetchInterval)
         return true
     }
 

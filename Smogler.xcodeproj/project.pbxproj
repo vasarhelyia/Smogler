@@ -29,6 +29,7 @@
 		8ADCE1591E5B7C4C00BF28AF /* AQILevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */; };
 		E761C19120B9505A00D2FE64 /* LocationManager+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19020B9505A00D2FE64 /* LocationManager+iOS.swift */; };
 		E761C19320B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */; };
+		E761C19520B952F800D2FE64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19420B952F800D2FE64 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,6 +99,7 @@
 		8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQILevel.swift; sourceTree = "<group>"; };
 		E761C19020B9505A00D2FE64 /* LocationManager+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationManager+iOS.swift"; sourceTree = "<group>"; };
 		E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+WCSessionDelegate.swift"; sourceTree = "<group>"; };
+		E761C19420B952F800D2FE64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				8A0CB6FD1E598DBA003390A2 /* AppDelegate.swift */,
+				E761C19420B952F800D2FE64 /* Constants.swift */,
 				E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */,
 				8A0CB6FF1E598DBA003390A2 /* ViewController.swift */,
 				8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */,
@@ -348,6 +351,7 @@
 				E761C19320B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift in Sources */,
 				E761C19120B9505A00D2FE64 /* LocationManager+iOS.swift in Sources */,
 				8A0CB6FE1E598DBA003390A2 /* AppDelegate.swift in Sources */,
+				E761C19520B952F800D2FE64 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
