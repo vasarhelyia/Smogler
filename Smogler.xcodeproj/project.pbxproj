@@ -27,6 +27,8 @@
 		8ABD77651E5A214F00656FDE /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A0CB74A1E5992C0003390A2 /* APIService.swift */; };
 		8ADCE1581E5B7C4C00BF28AF /* AQILevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */; };
 		8ADCE1591E5B7C4C00BF28AF /* AQILevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */; };
+		E761C19120B9505A00D2FE64 /* LocationManager+iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19020B9505A00D2FE64 /* LocationManager+iOS.swift */; };
+		E761C19320B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +96,8 @@
 		8A0CB74A1E5992C0003390A2 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		8A809DE21E6C637100ED0641 /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AQILevel.swift; sourceTree = "<group>"; };
+		E761C19020B9505A00D2FE64 /* LocationManager+iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationManager+iOS.swift"; sourceTree = "<group>"; };
+		E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+WCSessionDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,10 +142,12 @@
 			isa = PBXGroup;
 			children = (
 				8A0CB6FD1E598DBA003390A2 /* AppDelegate.swift */,
+				E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */,
 				8A0CB6FF1E598DBA003390A2 /* ViewController.swift */,
 				8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */,
 				8A0CB74A1E5992C0003390A2 /* APIService.swift */,
 				8A809DE21E6C637100ED0641 /* LocationManager.swift */,
+				E761C19020B9505A00D2FE64 /* LocationManager+iOS.swift */,
 				021B091B20B1DCDE001D59C1 /* Main.storyboard */,
 				8A0CB7041E598DBA003390A2 /* Assets.xcassets */,
 				8A0CB7061E598DBA003390A2 /* LaunchScreen.storyboard */,
@@ -339,6 +345,8 @@
 				8ADCE1581E5B7C4C00BF28AF /* AQILevel.swift in Sources */,
 				8A809DE31E6C637100ED0641 /* LocationManager.swift in Sources */,
 				8A0CB74B1E5992C0003390A2 /* APIService.swift in Sources */,
+				E761C19320B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift in Sources */,
+				E761C19120B9505A00D2FE64 /* LocationManager+iOS.swift in Sources */,
 				8A0CB6FE1E598DBA003390A2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

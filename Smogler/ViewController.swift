@@ -12,7 +12,7 @@ class ViewController: UIViewController, AQIDelegate {
 	
 	private var cityLabel = UILabel()
 	private var valueLabel = UILabel()
-  private var descriptionLabel = UILabel()
+    private var descriptionLabel = UILabel()
 	private var activityIndicator = UIActivityIndicatorView()
 	private var contentView = UIView()
 
