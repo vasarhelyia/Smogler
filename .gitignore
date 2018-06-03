@@ -16,6 +16,8 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+
+# Info.plist files for bundle identifiers...
 Smogler\ WatchKit\ Extension/Info.plist
 Smogler\ WatchKit\ App/Info.plist
 Smogler/Resources/Info.plist
