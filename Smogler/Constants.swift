@@ -11,3 +11,7 @@ import Foundation
 enum Constants {
     static let minBackgroundFetchInterval: TimeInterval = 1800
 }
+
+enum Identifiers {
+    static let tokenUserDefaultsKey = "api_token"
+}

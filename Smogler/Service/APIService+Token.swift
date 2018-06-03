@@ -8,5 +8,11 @@
 
 import Foundation
 
-let kToken = "NEW TOKEN"
+
+var kToken: String? {
+    didSet {
+        UserDefaults.standard.set(kToken, forKey: Identifiers.tokenUserDefaultsKey)
+        APIService.shared.fetchAQI()
+    }
+}
 let kBaseURLString = "https://api.waqi.info/feed"

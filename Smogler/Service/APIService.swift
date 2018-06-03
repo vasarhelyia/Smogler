@@ -30,9 +30,15 @@ class APIService: NSObject, URLSessionDataDelegate {
     let location = self.locationManager.geoLoc()
     let latitude = location?.coordinate.latitude
     let longitude = location?.coordinate.longitude
-		
+
+    guard let token = UserDefaults.standard.value(forKey: Identifiers.tokenUserDefaultsKey) as? String else {
+
+        // TODO: Make generic error factory to get rid of duplicate codes and IF DEFS for different OSs...
+        print("Couldn't find token, please shake your device and enter the token.")
+        return nil
+    }
     if let lat = latitude, let lng = longitude {
-      let urlString = "\(kBaseURLString)/geo:\(lat);\(lng)/?token=\(kToken)"
+      let urlString = "\(kBaseURLString)/geo:\(lat);\(lng)/?token=\(token)"
 
       guard let url = URL(string: urlString) else {
         #if os(watchOS)

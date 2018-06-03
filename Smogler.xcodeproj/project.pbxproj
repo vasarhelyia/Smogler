@@ -32,6 +32,8 @@
 		E761C19720B9537400D2FE64 /* ViewController+AQIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19620B9537400D2FE64 /* ViewController+AQIDelegate.swift */; };
 		E7B08D6620C47338001EE121 /* APIService+Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B08D6520C47338001EE121 /* APIService+Token.swift */; };
 		E7B08D6720C473AC001EE121 /* APIService+Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B08D6520C47338001EE121 /* APIService+Token.swift */; };
+		E7B08D6920C49532001EE121 /* AppDelegate+ShakeMotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B08D6820C49532001EE121 /* AppDelegate+ShakeMotion.swift */; };
+		E7B08D6C20C497AC001EE121 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19420B952F800D2FE64 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,7 @@
 		E761C19420B952F800D2FE64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E761C19620B9537400D2FE64 /* ViewController+AQIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+AQIDelegate.swift"; sourceTree = "<group>"; };
 		E7B08D6520C47338001EE121 /* APIService+Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+Token.swift"; sourceTree = "<group>"; };
+		E7B08D6820C49532001EE121 /* AppDelegate+ShakeMotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+ShakeMotion.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				8A0CB6FD1E598DBA003390A2 /* AppDelegate.swift */,
+				E7B08D6820C49532001EE121 /* AppDelegate+ShakeMotion.swift */,
 				E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */,
 				021B091B20B1DCDE001D59C1 /* Main.storyboard */,
 				8A0CB7061E598DBA003390A2 /* LaunchScreen.storyboard */,
@@ -378,6 +382,7 @@
 				8A0CB7001E598DBA003390A2 /* ViewController.swift in Sources */,
 				8ADCE1581E5B7C4C00BF28AF /* AQILevel.swift in Sources */,
 				8A809DE31E6C637100ED0641 /* LocationManager.swift in Sources */,
+				E7B08D6920C49532001EE121 /* AppDelegate+ShakeMotion.swift in Sources */,
 				E761C19720B9537400D2FE64 /* ViewController+AQIDelegate.swift in Sources */,
 				8A0CB74B1E5992C0003390A2 /* APIService.swift in Sources */,
 				E761C19320B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift in Sources */,
@@ -399,6 +404,7 @@
 				8A0CB72E1E598DBA003390A2 /* InterfaceController.swift in Sources */,
 				8ABD77651E5A214F00656FDE /* APIService.swift in Sources */,
 				8ADCE1591E5B7C4C00BF28AF /* AQILevel.swift in Sources */,
+				E7B08D6C20C497AC001EE121 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

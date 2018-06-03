@@ -86,16 +86,18 @@ extension ViewController {
     }
 
     func setup(with info: AQIInfo) {
-        activityIndicator.stopAnimating()
-        contentView.isHidden = false
+        DispatchQueue.main.async {
+            self.activityIndicator.stopAnimating()
+            self.contentView.isHidden = false
 
-        let level = info.aqiLevel
-        let city = info.city
+            let level = info.aqiLevel
+            let city = info.city
 
-        cityLabel.text = "\(city) air quality index:"
-        contentView.backgroundColor = level.color
-        valueLabel.text = "\(level.value)"
-        descriptionLabel.text = "\(level.text) \(level.emoji)"
+            self.cityLabel.text = "\(city) air quality index:"
+            self.contentView.backgroundColor = level.color
+            self.valueLabel.text = "\(level.value)"
+            self.descriptionLabel.text = "\(level.text) \(level.emoji)"
+        }
     }
 
     func fail(with error: String) {
