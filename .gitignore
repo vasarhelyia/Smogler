@@ -16,6 +16,9 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 xcuserdata/
+Smogler\ WatchKit\ Extension/Info.plist
+Smogler\ WatchKit\ App/Info.plist
+Smogler/Resources/Info.plist
 
 ## Token for API
 Smogler/Service/APIService+Token.swift
