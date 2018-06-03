@@ -11,7 +11,7 @@ import UIKit
 
 extension UIWindow {
     open override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
-        if  motion == .motionShake {
+        if motion == .motionShake {
             let alertController = UIAlertController(title: "Enter your API Token", message: nil, preferredStyle: .alert)
             alertController.addTextField { textfield in
                 textfield.placeholder = "Your generated API Token"
