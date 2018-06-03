@@ -41,11 +41,11 @@ class InterfaceController: WKInterfaceController, WCSessionDelegate, AQIDelegate
     session?.delegate = self
     session?.activate()
 
-    APIService.sharedInstance.watchDelegate = self
+    APIService.shared.watchDelegate = self
   }
 
   override func willActivate() {
-    APIService.sharedInstance.fetchAQI()
+    APIService.shared.fetchAQI()
   }
 
   private func updateAQILevel(aqiInfo: AQIInfo) {

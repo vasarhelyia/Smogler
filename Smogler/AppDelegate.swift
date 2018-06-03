@@ -23,11 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationDidBecomeActive(_ application: UIApplication) {
-        APIService.sharedInstance.fetchAQI()
+        APIService.shared.fetchAQI()
     }
 
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        APIService.sharedInstance.fetchAQI()
+        APIService.shared.fetchAQI()
         // TODO: completionHandler(.newData)?
     }
 }

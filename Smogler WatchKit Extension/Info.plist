@@ -31,20 +31,20 @@
 		<key>NSExtensionAttributes</key>
 		<dict>
 			<key>WKAppBundleIdentifier</key>
-			<string>vasarhelyia.Smogler.watchkitapp</string>
+			<string>com.dominikbucher.Smogler.watchkitapp</string>
 		</dict>
 		<key>NSExtensionPointIdentifier</key>
 		<string>com.apple.watchkit</string>
 	</dict>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Smogler is using your location to determine air quality index based on where you are.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
+	<string>Smogler is using your location to determine air quality index based on where you are.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>Smogler is using your location to determine air quality index based on where you are.</string>
 	<key>UIBackgroundModes</key>
 	<array/>
 	<key>WKExtensionDelegateClassName</key>
 	<string>$(PRODUCT_MODULE_NAME).ExtensionDelegate</string>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Smogler is using your location to determine air quality index based on where you are.</string>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Smogler is using your location to determine air quality index based on where you are.</string>
 </dict>
 </plist>

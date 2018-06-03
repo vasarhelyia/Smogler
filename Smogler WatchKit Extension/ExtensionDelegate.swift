@@ -18,7 +18,7 @@ class ExtensionDelegate: NSObject, WKExtensionDelegate {
   for task : WKRefreshBackgroundTask in backgroundTasks {
     if (WKExtension.shared().applicationState == .background) {
       if task is WKApplicationRefreshBackgroundTask {
-        APIService.sharedInstance.fetchAQI()
+        APIService.shared.fetchAQI()
         scheduleBackgroundTask()
       }
     }

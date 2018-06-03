@@ -28,7 +28,7 @@
 		<string>UIInterfaceOrientationPortraitUpsideDown</string>
 	</array>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>vasarhelyia.Smogler</string>
+	<string>com.dominikbucher.Smogler</string>
 	<key>WKWatchKitApp</key>
 	<true/>
 </dict>

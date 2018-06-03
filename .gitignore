@@ -17,6 +17,9 @@ DerivedData/
 !default.perspectivev3
 xcuserdata/
 
+## Token for API
+Smogler/Service/APIService+Token.swift
+
 ## Other
 *.moved-aside
 *.xcuserstate

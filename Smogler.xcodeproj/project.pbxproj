@@ -30,6 +30,8 @@
 		E761C19320B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */; };
 		E761C19520B952F800D2FE64 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19420B952F800D2FE64 /* Constants.swift */; };
 		E761C19720B9537400D2FE64 /* ViewController+AQIDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E761C19620B9537400D2FE64 /* ViewController+AQIDelegate.swift */; };
+		E7B08D6620C47338001EE121 /* APIService+Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B08D6520C47338001EE121 /* APIService+Token.swift */; };
+		E7B08D6720C473AC001EE121 /* APIService+Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B08D6520C47338001EE121 /* APIService+Token.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,7 @@
 		E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AppDelegate+WCSessionDelegate.swift"; sourceTree = "<group>"; };
 		E761C19420B952F800D2FE64 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		E761C19620B9537400D2FE64 /* ViewController+AQIDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController+AQIDelegate.swift"; sourceTree = "<group>"; };
+		E7B08D6520C47338001EE121 /* APIService+Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "APIService+Token.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,17 +147,13 @@
 			isa = PBXGroup;
 			children = (
 				8A0CB6FD1E598DBA003390A2 /* AppDelegate.swift */,
-				E761C19420B952F800D2FE64 /* Constants.swift */,
 				E761C19220B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift */,
-				8A0CB6FF1E598DBA003390A2 /* ViewController.swift */,
-				E761C19620B9537400D2FE64 /* ViewController+AQIDelegate.swift */,
-				8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */,
-				8A0CB74A1E5992C0003390A2 /* APIService.swift */,
-				8A809DE21E6C637100ED0641 /* LocationManager.swift */,
 				021B091B20B1DCDE001D59C1 /* Main.storyboard */,
-				8A0CB7041E598DBA003390A2 /* Assets.xcassets */,
 				8A0CB7061E598DBA003390A2 /* LaunchScreen.storyboard */,
-				8A0CB7091E598DBA003390A2 /* Info.plist */,
+				E761C19420B952F800D2FE64 /* Constants.swift */,
+				E7B08D6220C467CB001EE121 /* MainViewController */,
+				E7B08D6320C467D7001EE121 /* Service */,
+				E7B08D6420C467F7001EE121 /* Resources */,
 			);
 			path = Smogler;
 			sourceTree = "<group>";
@@ -189,6 +188,35 @@
 				8A0CB72C1E598DBA003390A2 /* PushNotificationPayload.apns */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7B08D6220C467CB001EE121 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8A0CB6FF1E598DBA003390A2 /* ViewController.swift */,
+				E761C19620B9537400D2FE64 /* ViewController+AQIDelegate.swift */,
+			);
+			path = MainViewController;
+			sourceTree = "<group>";
+		};
+		E7B08D6320C467D7001EE121 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				8ADCE1571E5B7C4C00BF28AF /* AQILevel.swift */,
+				8A0CB74A1E5992C0003390A2 /* APIService.swift */,
+				E7B08D6520C47338001EE121 /* APIService+Token.swift */,
+				8A809DE21E6C637100ED0641 /* LocationManager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		E7B08D6420C467F7001EE121 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8A0CB7041E598DBA003390A2 /* Assets.xcassets */,
+				8A0CB7091E598DBA003390A2 /* Info.plist */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +287,7 @@
 				TargetAttributes = {
 					8A0CB6F91E598DBA003390A2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X2MB65427X;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -269,6 +298,7 @@
 					};
 					8A0CB7161E598DBA003390A2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X2MB65427X;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -279,6 +309,7 @@
 					};
 					8A0CB7251E598DBA003390A2 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = X2MB65427X;
 						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -352,6 +383,7 @@
 				E761C19320B9515D00D2FE64 /* AppDelegate+WCSessionDelegate.swift in Sources */,
 				8A0CB6FE1E598DBA003390A2 /* AppDelegate.swift in Sources */,
 				E761C19520B952F800D2FE64 /* Constants.swift in Sources */,
+				E7B08D6620C47338001EE121 /* APIService+Token.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +391,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7B08D6720C473AC001EE121 /* APIService+Token.swift in Sources */,
 				8A0CB7321E598DBA003390A2 /* NotificationController.swift in Sources */,
 				8A0CB7341E598DBA003390A2 /* ComplicationController.swift in Sources */,
 				8A0CB7301E598DBA003390A2 /* ExtensionDelegate.swift in Sources */,
@@ -517,10 +550,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X2MB65427X;
 				INFOPLIST_FILE = "Smogler WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominikbucher.Smogler.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -534,10 +567,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X2MB65427X;
 				INFOPLIST_FILE = "Smogler WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominikbucher.Smogler.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -552,10 +585,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X2MB65427X;
 				IBSC_MODULE = Smogler_WatchKit_Extension;
 				INFOPLIST_FILE = "Smogler WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominikbucher.Smogler.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -570,10 +603,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = X2MB65427X;
 				IBSC_MODULE = Smogler_WatchKit_Extension;
 				INFOPLIST_FILE = "Smogler WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominikbucher.Smogler.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -587,11 +620,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Smogler/Info.plist;
+				DEVELOPMENT_TEAM = X2MB65427X;
+				INFOPLIST_FILE = "$(SRCROOT)/Smogler/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominikbucher.Smogler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -601,11 +634,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
-				INFOPLIST_FILE = Smogler/Info.plist;
+				DEVELOPMENT_TEAM = X2MB65427X;
+				INFOPLIST_FILE = "$(SRCROOT)/Smogler/Resources/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dominikbucher.Smogler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};

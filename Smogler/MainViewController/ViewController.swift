@@ -27,8 +27,8 @@ class ViewController: UIViewController {
         self.contentView.isHidden = true
         activityIndicator.startAnimating()
 
-        APIService.sharedInstance.fetchAQI()
-        APIService.sharedInstance.delegate = self
+        APIService.shared.fetchAQI()
+        APIService.shared.delegate = self
     }
 }
 

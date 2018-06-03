@@ -8,8 +8,6 @@
 
 import Foundation
 
-let token = "YOUR_TOKEN"
-let baseURLString = "https://api.waqi.info/feed"
 
 protocol AQIDelegate: class {
   func didUpdateAQILevel(aqiInfo: AQIInfo)
@@ -17,7 +15,7 @@ protocol AQIDelegate: class {
 }
 
 class APIService: NSObject, URLSessionDataDelegate {
-  static var sharedInstance = APIService()
+  static var shared = APIService()
   private var locationManager = LocationManager()
 
   #if os(watchOS)
@@ -34,7 +32,7 @@ class APIService: NSObject, URLSessionDataDelegate {
     let longitude = location?.coordinate.longitude
 		
     if let lat = latitude, let lng = longitude {
-      let urlString = "\(baseURLString)/geo:\(lat);\(lng)/?token=\(token)"
+      let urlString = "\(kBaseURLString)/geo:\(lat);\(lng)/?token=\(kToken)"
 
       guard let url = URL(string: urlString) else {
         #if os(watchOS)
@@ -45,6 +43,7 @@ class APIService: NSObject, URLSessionDataDelegate {
         return nil
       }
       return URLRequest(url: url)
+
     } else {
     #if os(watchOS)
       watchDelegate?.didFailWithError(err: "could not compose URL request, no location")
@@ -69,21 +68,19 @@ class APIService: NSObject, URLSessionDataDelegate {
 
   private func parseResults(json: AnyObject) -> AQIInfo? {
     guard let dict = json as? [String:Any],
-      let data = dict["data"] as? [String:Any],
-      let aqi = data["aqi"] as? Int,
-      let cityDict = data["city"] as? [String: Any],
-      let city = cityDict["name"] as? String else {
+          let data = dict["data"] as? [String:Any],
+          let aqi = data["aqi"] as? Int,
+          let cityDict = data["city"] as? [String: Any],
+          let city = cityDict["name"] as? String
+    else {
         print("Error parsing JSON. Make sure you are using a valid API token. You can acquire it here: https://aqicn.org/data-platform/token/")
         return nil
     }
-
     return AQIInfo(aqiLevel: AQILevel(level: aqi), city: city)
   }
 
   private func refreshWithAQIInfo(aqiInfo: AQIInfo?) {
-    guard let aqi = aqiInfo else {
-      return
-    }
+    guard let aqi = aqiInfo else { return }
 
     DispatchQueue.main.async {
       #if os(watchOS)
