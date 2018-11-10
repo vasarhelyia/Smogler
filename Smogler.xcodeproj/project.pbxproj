@@ -508,7 +508,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Smogler WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.smoglerapp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -525,7 +525,7 @@
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "Smogler WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.smoglerapp.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -543,7 +543,7 @@
 				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Smogler_WatchKit_Extension;
 				INFOPLIST_FILE = "Smogler WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.smoglerapp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -561,7 +561,7 @@
 				DEVELOPMENT_TEAM = "";
 				IBSC_MODULE = Smogler_WatchKit_Extension;
 				INFOPLIST_FILE = "Smogler WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.smoglerapp.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -579,7 +579,7 @@
 				INFOPLIST_FILE = Smogler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler;
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.smoglerapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -593,7 +593,7 @@
 				INFOPLIST_FILE = Smogler/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.Smogler;
+				PRODUCT_BUNDLE_IDENTIFIER = vasarhelyia.smoglerapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
