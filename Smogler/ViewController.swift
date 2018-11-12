@@ -29,11 +29,13 @@ class ViewController: UIViewController, AQIDelegate {
     contentView.addSubview(cityLabel)
   
     valueLabel.font = UIFont.boldSystemFont(ofSize: 70)
-    valueLabel.numberOfLines = 1
+    valueLabel.numberOfLines = 0
+    valueLabel.textAlignment = .center
     contentView.addSubview(valueLabel)
   
     descriptionLabel.font = UIFont.systemFont(ofSize: 30)
-    descriptionLabel.numberOfLines = 1
+    descriptionLabel.numberOfLines = 0
+    descriptionLabel.textAlignment = .center
     contentView.addSubview(descriptionLabel)
   
     // Setup constraints
@@ -62,11 +64,13 @@ class ViewController: UIViewController, AQIDelegate {
 
       // Value
       valueLabel.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
-      valueLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
+      valueLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30),
+      valueLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -30),
 
       // Description
       descriptionLabel.topAnchor.constraint(equalTo: valueLabel.bottomAnchor, constant: 100),
-      descriptionLabel.centerXAnchor.constraint(equalTo: contentView.centerXAnchor)
+      descriptionLabel.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 30),
+      descriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -30),
     ])
 	}
 	
