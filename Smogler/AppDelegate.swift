@@ -15,7 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, WCSessionDelegate {
   var window: UIWindow?
   private let session: WCSession? = WCSession.isSupported() ? WCSession.default : nil
 
-  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 
   session?.delegate = self
   session?.activate()
