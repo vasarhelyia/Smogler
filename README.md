@@ -1,6 +1,6 @@
 # Smogler #
 
-Location based air quality information, on your iPhone and your Apple Watch. 
+Location based air quality information, on your iPhone and your Apple Watch. Swift 5, iOS 11-13, and watchOS 4-6 compatible.
 
 ## How do I get started? ##
 
