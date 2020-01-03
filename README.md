@@ -18,15 +18,15 @@ From the [public API](https://aqicn.org/api/) of the [World Air Quality Index Pr
 
 1. iPhone app
 
-![Smogler iPhone](https://user-images.githubusercontent.com/1460573/48306624-c8fb5a80-e4f0-11e8-9e0a-11fa91fd0837.png)
+![Smogler iPhone](https://user-images.githubusercontent.com/1460573/71706044-6a99d700-2d97-11ea-8046-360b7c166677.png)
 
 2. Watch app
 
-![Smogler Watch](https://user-images.githubusercontent.com/1460573/48306633-fd6f1680-e4f0-11e8-8b15-c46bdd9b646f.png)
+![Smogler Watch](https://user-images.githubusercontent.com/1460573/71706066-9321d100-2d97-11ea-8105-1a1c9d474b84.PNG)
 
 3. Watch complication
 
-![Smogler Watch complication](https://user-images.githubusercontent.com/1460573/48306634-fd6f1680-e4f0-11e8-84b4-e76b47fda181.png)
+![Smogler Watch complication](https://user-images.githubusercontent.com/1460573/71706070-95842b00-2d97-11ea-801d-94ecc1ae7ab4.PNG)
 
 ## What's next?
 
