@@ -18,7 +18,7 @@ From the [public API](https://aqicn.org/api/) of the [World Air Quality Index Pr
 
 1. iPhone app
 
-![Smogler iPhone](https://user-images.githubusercontent.com/1460573/71706044-6a99d700-2d97-11ea-8046-360b7c166677.png)
+![Smogler iPhone](https://user-images.githubusercontent.com/1460573/71706144-f3b10e00-2d97-11ea-9969-c42973e35926.png)
 
 2. Watch app
 
