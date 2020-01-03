@@ -26,6 +26,11 @@ class APIService: NSObject, URLSessionDataDelegate {
     weak var delegate: AQIDelegate?
   #endif
 
+  override init() {
+    super.init()
+    self.locationManager.delegate = self
+  }
+
   // Compose request
 
   private var geoLocURLRequest: URLRequest? {
@@ -94,7 +99,7 @@ class APIService: NSObject, URLSessionDataDelegate {
     }
   }
 	
-  // URLSessionDataTaskDelegate
+  // MARK: URLSessionDataTaskDelegate
 
   func urlSession(_ session: URLSession, dataTask: URLSessionDataTask, didReceive data: Data) {
     let json = try? JSONSerialization.jsonObject(with: data, options: [])
@@ -105,5 +110,13 @@ class APIService: NSObject, URLSessionDataDelegate {
     if let e = error {
       print("URL session completed with error: \(e.localizedDescription)")
     }
+  }
+}
+
+// MARK: LocationManagerDelegate
+
+extension APIService: LocationManagerDelegate {
+  func didChangeLocation() {
+    self.fetchAQI()
   }
 }
